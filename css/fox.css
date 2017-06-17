@@ -243,25 +243,35 @@ label > .label-body {
   background: #679fe6;
 }
 
-.button-outline {
+.button-white {
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
 }
 
-.button-outline:hover {
+.button-white:hover {
   background: #fff;
   color: #2776dc;
   border: 1px solid #2776dc;
 }
 
-.button-inverse {
+.button-black {
+  color: #fff;
+  background: #141619;
+}
+
+.button-black:hover {
+  background: #383C42;
+  color: #fff;
+}
+
+.button-outline {
   color: #2776dc;
   background: transparent;
   border: 1px solid #2776dc;
 }
 
-.button-inverse:hover {
+.button-outline:hover {
     background: #2776dc;
     color: #ffffff;
 }
