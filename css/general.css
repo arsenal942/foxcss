@@ -1,0 +1,101 @@
+.grid-display {
+  margin: 20px 0;
+}
+
+.grid-display [class^="col"] {
+  background: #93baed;
+  border: 1px solid #2776dc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.grid-display [class^="col"] p {
+  color: #2776dc;
+  font-size: 0.8rem;
+}
+
+.container {
+  padding-top: 100px;
+}
+
+.body-content {
+  background: #fff;
+  padding: 100px 0 120px 0;
+  position: relative;
+  z-index: 0 !important;
+}
+
+.body-content > .container {
+  position: relative;
+  top: 100px;
+  padding-bottom: 100px;
+}
+
+header {
+    height: 760px;
+    width: 100%;
+    z-index: 100 !important;
+    margin-top: 0;
+    background: #2776dc;
+    background-image: -webkit-linear-gradient(#679fe6, #2776dc);
+    background-image: -moz-linear-gradient(#679fe6, #2776dc);
+    background-image: -o-linear-gradient(#679fe6, #2776dc);
+    background-image: linear-gradient(#679fe6, #2776dc);
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+header p, 
+header i {
+    color: #FFFFFF;
+}
+
+header i {
+    font-size: 50px;
+}
+
+footer {
+    height: 250px;
+    width: 100%;
+    color: #fff;
+    z-index: 100 !important;
+    margin-bottom: 0;
+    margin-top: 40px;
+    background: #2776dc;
+    background-image: -webkit-linear-gradient(#679fe6, #2776dc);
+    background-image: -moz-linear-gradient(#679fe6, #2776dc);
+    background-image: -o-linear-gradient(#679fe6, #2776dc);
+    background-image: linear-gradient(#679fe6, #2776dc);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.img {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img-logo {
+  background-image: url('http://simplegrid.io/img/logo-white.svg');
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  padding-bottom: 8px;
+}
