@@ -88,12 +88,14 @@ em {
   margin-right: auto;
 }
 
-.row {
-  position: relative;
-  width: 100%;
-}
+.row:before, 
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+  }
 
-.row [class^="col"] {
+[class*='col-'] {
   float: left;
   margin: 0.75rem 2%;
   min-height: 0.225rem;
@@ -107,10 +109,6 @@ em {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-.hidden {
-  display: none;
 }
 
 /* FORMS */
@@ -326,10 +324,6 @@ label > .label-body {
 
   .col-12 {
     width: 96%;
-  }
-
-  .hidden-sm {
-    display: block;
   }
 }
 
