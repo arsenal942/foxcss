@@ -145,10 +145,13 @@ textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; 
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px; 
   }
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px; 
+  }  
 
 input[type="email"]:focus,
 input[type="number"]:focus,
