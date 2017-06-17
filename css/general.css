@@ -50,20 +50,25 @@ header h3,
 header h4,
 header h5,
 header h6,
-header p, 
-header i {
-    color: #FFFFFF;
+header p {
+    color: #fff;
+    padding-bottom: 15px;
 }
 
 header i {
     font-size: 50px;
+    color: #fff;
+}
+
+header i:hover {
+  color: #FAFAFA;
 }
 
 footer {
     height: 250px;
     width: 100%;
     color: #fff;
-    z-index: 100 !important;
+    z-index: 100;
     margin-bottom: 0;
     margin-top: 40px;
     background: #2776dc;
@@ -97,5 +102,5 @@ footer a:visited {
   background-size: contain;
   height: 40px;
   width: 40px;
-  padding-bottom: 8px;
+  padding-bottom: 50px;
 }

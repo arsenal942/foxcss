@@ -201,50 +201,46 @@ label > .label-body {
     transition: all 0.3s ease;
     outline: none;
     border: none;
+    color: #fff;
+}
+
+.button:hover {
+  color: #fff;
 }
 
 .button-danger {
-  color: #ffffff;
   background: #e74c3c;
 }
 
 .button-danger:hover {
-  color: #ffffff;
   background: #f2796c;
 }
 
 .button-success {
-  color: #ffffff;
   background: #27ae60;
 }
 
 .button-success:hover {
-  color: #fff;
   background: #46bf79;
 }
 
 .button-warning {
-  color: #fff;
   background: #FFA14F;
 }
 
 .button-warning:hover {
-  color: #fff;
   background: #FDB576;
 }
 
 .button-primary {
-  color: #fff;
   background: #2776dc;
 }
 
 .button-primary:hover {
-  color: #fff;
   background: #679fe6;
 }
 
 .button-white {
-  color: #fff;
   background: transparent;
   border: 1px solid #fff;
 }
@@ -256,13 +252,11 @@ label > .label-body {
 }
 
 .button-black {
-  color: #fff;
   background: #141619;
 }
 
 .button-black:hover {
   background: #383C42;
-  color: #fff;
 }
 
 .button-outline {
@@ -273,7 +267,6 @@ label > .label-body {
 
 .button-outline:hover {
     background: #2776dc;
-    color: #ffffff;
 }
 
 .line {
