@@ -33,10 +33,11 @@
 }
 
 header {
-    height: 760px;
+    height: 100%;
     width: 100%;
     z-index: 100 !important;
     margin-top: 0;
+    margin-bottom: 10px;
     background: #2776dc;
     background-image: -webkit-linear-gradient(#679fe6, #2776dc);
     background-image: -moz-linear-gradient(#679fe6, #2776dc);
@@ -98,9 +99,18 @@ footer a:visited {
 }
 
 .img-logo {
-  background-image: url('http://simplegrid.io/img/logo-white.svg');
+  background-image: url('http://www.iconninja.com/files/381/409/110/racoon-icon.svg');
   background-size: contain;
-  height: 40px;
-  width: 40px;
+  height: 120px;
+  width: 120px;
   padding-bottom: 50px;
 }
+
+@media only screen and (max-width: 45em) {
+  header {
+    height: 150%;
+  }
+  #downArrow {
+    display: none;
+  }
+ }

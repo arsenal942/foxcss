@@ -105,12 +105,6 @@ em {
   width: 96%;
 }
 
-.row::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 /* FORMS */
 .full-width {
   width: 100%;
