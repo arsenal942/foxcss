@@ -15,6 +15,10 @@
   font-size: 0.8rem;
 }
 
+#typography [class^="col"] p {
+  margin-top: 10px;
+}
+
 .container {
   padding-top: 100px;
 }
@@ -105,6 +109,10 @@ footer a:visited {
   width: 120px;
   padding-bottom: 50px;
 }
+
+ .ion-heart {
+    color: #AC1D3F;
+  }
 
 @media only screen and (max-width: 45em) {
   header {
