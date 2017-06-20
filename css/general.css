@@ -69,6 +69,14 @@ header i:hover {
   color: #FAFAFA;
 }
 
+#typography p {
+padding-top: 10px;
+}
+
+#typography p:first-of-type {
+padding-top: 0;
+}
+
 footer {
     height: 300px;
     width: 100%;
