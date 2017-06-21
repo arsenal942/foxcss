@@ -36,17 +36,20 @@
   padding-bottom: 100px;
 }
 
+header, footer {
+    background: #36d1dc;
+    background-image: -webkit-linear-gradient(#36d1dc, #5b86e5);
+    background-image: -moz-linear-gradient(#36d1dc, #5b86e5);
+    background-image: -o-linear-gradient(#36d1dc, #5b86e5);
+    background-image: linear-gradient(#36d1dc, #5b86e5);
+    z-index: 100;
+    width: 100%;
+}
+
 header {
     height: 100%;
-    width: 100%;
-    z-index: 100 !important;
     margin-top: 0;
     margin-bottom: 10px;
-    background: #2776dc;
-    background-image: -webkit-linear-gradient(#679fe6, #2776dc);
-    background-image: -moz-linear-gradient(#679fe6, #2776dc);
-    background-image: -o-linear-gradient(#679fe6, #2776dc);
-    background-image: linear-gradient(#679fe6, #2776dc);
 }
 
 header h1,
@@ -79,16 +82,9 @@ padding-top: 0;
 
 footer {
     height: 300px;
-    width: 100%;
     color: #fff;
-    z-index: 100;
     margin-bottom: 0;
     margin-top: 40px;
-    background: #2776dc;
-    background-image: -webkit-linear-gradient(#679fe6, #2776dc);
-    background-image: -moz-linear-gradient(#679fe6, #2776dc);
-    background-image: -o-linear-gradient(#679fe6, #2776dc);
-    background-image: linear-gradient(#679fe6, #2776dc);
 }
 
 footer a {
@@ -120,6 +116,11 @@ footer a:visited {
 
  .ion-heart {
     color: #AC1D3F;
+  }
+
+  .ion-android-arrow-dropdown-circle:hover {
+    color:#E2E2E2;
+    transition: all 0.5s ease;
   }
 
 @media only screen and (max-width: 45em) {

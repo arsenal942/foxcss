@@ -171,7 +171,6 @@ label > .label-body {
 .button-white:hover {
   background: #fff;
   color: #2776dc;
-  border: 1px solid #2776dc;
 }
 .button-black {
   background: #141619;

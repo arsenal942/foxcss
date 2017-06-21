@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="css/reset.css"/>
   <link rel="stylesheet" href="css/general.css"/>
   <link rel="stylesheet" href="css/fox.css"/>
@@ -32,8 +31,8 @@
         </div>
         <div class="col-4 center">
           <i class="ion-link"></i>
-          <h3 class="font-light">Flexibile</h3>
-          <p>Built with flexibility in-mind so you can chop and change as you please</p>
+          <h3 class="font-light">Flexible</h3>
+          <p>Built with flexibility in mind so you can chop and change as you please</p>
         </div>
         <div class="col-4 center">
           <i class="ion-ios-bolt-outline"></i>
@@ -44,7 +43,7 @@
       <div id="downArrow" class="row">
         <div class="col-12 center">
           <p>
-            <a href="#about">
+            <a id="scrollToAbout">
               <i class="ion-android-arrow-dropdown-circle"></i>
             </a>
           </p>
@@ -59,7 +58,7 @@
     <div class="row">
       <div class="col-12">
         <h3>What is Fox?</h3>
-        <p>Fox is a lightweight, compact and simply all round awesome CSS framework that was built with one goal. To give web developers the CSS framework they've been needing for years.
+        <p>Fox is a lightweight, compact and simply all-round awesome CSS framework that was built with one goal, to give web developers the CSS framework they've been needing for years.
           It's under 5kb (less when minified and GZipped), 300 lines (less if you want to have some unreadable CSS) and with such simplistic styling, it enables you to do what you do best. Design and Develop. Start using Fox today and let it change the way you work for the better.
           <div class="center">
             <a href="https://bitbucket.org/Nomm_/fox-css">
@@ -243,7 +242,7 @@
     <div class="row">
       <div class="col-12">
         <h3>Typography</h3>
-        <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Fox has changed the default font-sizes but all measurements are set with <code>rems</code>, so a <code>h1</code> with <code>2.5rem</code> font-size just means <code>40px</code>.</p>
+        <p>The type Fox uses is all set with <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Fox has changed the default font-sizes but all measurements are set with <code>rems</code>, so a <code>h1</code> with <code>2.5rem</code> font-size just means <code>40px</code>.</p>
       </div>
     <div id="typography" class="row">
       <div class="col-6">
@@ -333,7 +332,7 @@
           <h3>Images</h3>
           <p>
             Images are automatically responsive in Fox so you don't ever have to worry about 
-            them falling off the edge of rows or not fitting into your columns. By default they are automatically cenetered however you can change this
+            them falling off the edge of rows or not fitting into your columns. By default they are automatically centered however you can change this
             as you desire.
           </p>
           <div class="col-4">
@@ -494,15 +493,16 @@
         </div>  
       </div>
     </section>
-
+    
 </div>
+
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-5 left">
             <p>
               Made with <i class="ion-heart"></i> from Australia by <a href="https://bitbucket.org/Nomm_/" target="_blank">Nicholas Clancy</a> <br/>
-              Contribue on <a href="https://bitbucket.org/Nomm_/fox-css">Bitbucket</a><br/>
+              Contribute on <a href="https://bitbucket.org/Nomm_/fox-css">Bitbucket</a><br/>
               Contact me on <a href="https://www.linkedin.com/in/clancynicholas/">LinkedIn</a><br/>
               Open source under the <a href="https://opensource.org/licenses/MIT">MIT License</a>
             </p>
@@ -510,5 +510,14 @@
         </div>
       </div>
     </footer>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>    
+  <script> 
+    $("#scrollToAbout").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 1300);
+    });
+  </script>
 </body>
 </html>
