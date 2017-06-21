@@ -23,19 +23,6 @@
   padding-top: 100px;
 }
 
-.body-content {
-  background: #fff;
-  padding: 100px 0 120px 0;
-  position: relative;
-  z-index: 0 !important;
-}
-
-.body-content > .container {
-  position: relative;
-  top: 100px;
-  padding-bottom: 100px;
-}
-
 header, footer {
     background: #36d1dc;
     background-image: -webkit-linear-gradient(#36d1dc, #5b86e5);
@@ -48,18 +35,12 @@ header, footer {
 
 header {
     min-height: 100%;
-    margin-top: 0;
-    margin-bottom: 10px;
+    color: #fff;
 }
 
 header h1,
-header h2,
 header h3,
-header h4,
-header h5,
-header h6,
 header p {
-    color: #fff;
     padding-bottom: 15px;
 }
 
@@ -89,36 +70,32 @@ footer {
 
 footer a {
   color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 footer a:visited {
   color: #fff;
-  text-decoration: none;
 }
 
-.img {
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.img-logo {
+.logo {
   background-image: url('http://www.iconninja.com/files/381/409/110/racoon-icon.svg');
+  background-repeat: no-repeat;
   background-size: contain;
   height: 120px;
   width: 120px;
   padding-bottom: 50px;
 }
 
- .ion-heart {
-    color: #e74c3c;
-  }
+.ion-heart {
+  color: #e74c3c;
+}
+.ion-heart:hover {
+  color: #f2796c;
+}
+.ion-android-arrow-dropdown-circle:hover {
+  color:#E2E2E2;
+}
 
-  .ion-android-arrow-dropdown-circle:hover {
-    color:#E2E2E2;
-    transition: all 0.5s ease;
-  }
+[class*='ion-']:hover {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
