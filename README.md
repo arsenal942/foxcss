@@ -23,4 +23,4 @@ Fox is a lightweight, compact and simply all round awesome CSS framework that wa
 * Send me a message and I'll do my best to get back to you: @Nomm_
 
 ### Other notes ###
-* It is extremely important you use the 'reset.css' to ensure an optimal experience. I can't vouch for the accuracy of other CSS reset files as I have only used the one provided.
+* It is extremely important you use the **'reset.css'** to ensure an optimal experience. I can't vouch for the accuracy of other CSS reset files as I have only used the one provided.
