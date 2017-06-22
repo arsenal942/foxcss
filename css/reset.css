@@ -49,3 +49,9 @@ table {
 a, a:visited {
 	text-decoration: none;
 }
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
