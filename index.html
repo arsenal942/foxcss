@@ -2,13 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Fox CSS - No–nonsense CSS Framework for Web Development">
+  <meta name="author" content="Nicholas Clancy">
+  <meta property="og:url" content="http://foxcss.com/" ng-if="og">
+  <meta property="og:type" content="website" ng-if="og">
+  <meta property="og:title" content="Fox CSS" ng-if="og">
+  <meta property="og:description" content="Fox CSS - No–nonsense CSS Framework for Web Development" ng-if="og">
+  <meta property="og:image" content="" ng-if="og">
+  <meta property="og:image:secure_url" content="" />
+  <title>Fox | No–nonsense CSS Framework for Web Development</title>
+
   <link rel="stylesheet" href="css/reset.css"/>
-  <link rel="stylesheet" href="css/general.css"/>
+  <link rel="stylesheet" href="css/landing.css"/>
   <link rel="stylesheet" href="css/fox.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
-  <title>Fox | No–nonsense CSS Framework for Web Development</title>
 </head>
 <body>
 
@@ -332,17 +342,18 @@
           <h3>Images</h3>
           <p>
             Images are automatically responsive in Fox so you don't ever have to worry about 
-            them falling off the edge of rows or not fitting into your columns. By default they are automatically centered however you can change this
-            as you desire.
+            them falling off the edge of rows or not fitting into your columns. 
+            By default they are automatically centered and images use a max-width property that is inherited from the parent element. 
+            The default max-width is <code>70%</code> but you can use either <code>.img-small</code> or <code>.img-large</code> to adjust the size as required.
           </p>
           <div class="col-4">
-            <img src="http://static.boredpanda.com/blog/wp-content/uploads/2015/09/zen-foxes-roeselien-raimond-3__880.jpg" />
+            <img class="img-small" src="http://static.boredpanda.com/blog/wp-content/uploads/2015/09/zen-foxes-roeselien-raimond-3__880.jpg" alt="Fox CSS"/>
           </div>
           <div class="col-4">
-            <img src="http://static.boredpanda.com/blog/wp-content/uploads/2015/09/zen-foxes-roeselien-raimond-3__880.jpg" />
+            <img src="http://static.boredpanda.com/blog/wp-content/uploads/2015/09/zen-foxes-roeselien-raimond-3__880.jpg" alt="Fox CSS"/>
           </div>
           <div class="col-4">
-            <img src="http://static.boredpanda.com/blog/wp-content/uploads/2015/09/zen-foxes-roeselien-raimond-3__880.jpg" />
+            <img class="img-large" src="http://static.boredpanda.com/blog/wp-content/uploads/2015/09/zen-foxes-roeselien-raimond-3__880.jpg" alt="Fox CSS"/>
           </div>
         </div>
       </div>
@@ -446,6 +457,50 @@
         </div>
         <div class="col-3"></div>
     </div>
+
+    <section>
+      <div class="row">
+        <div class="col-12">
+          <h3>Panels</h3>
+          <p>
+            Panels are a great way to group and organise related information in bordered areas. You can also colour the panels by using contextual classes to define them for the heading, footer or both. 
+            Images have also had some special attention given to them, decreasing their <code>max-width</code> to 50% so they're not too large and nestle nicely into the panel. You can modify this as you require.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+            <div class="panel">
+              <div class="panel-heading primary">Primary heading</div>
+            </div>
+        </div>  
+        <div class="col-6">
+            <div class="panel">
+              <div class="panel-heading danger">Danger heading</div>
+            </div>
+        </div>  
+      <div class="col-12">
+          <div class="panel">
+            <div class="panel-heading">Default heading</div>
+            <div class="panel-body">
+              <p>
+                <img class="img-small" src="http://static.boredpanda.com/blog/wp-content/uploads/2015/09/zen-foxes-roeselien-raimond-3__880.jpg" />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>              
+            </div>
+            <div class="panel-footer">Default footer</div>
+          </div>
+      </div>                       
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="col-3"></div>
+        <div class="col-6">
+          <div class="line"></div>
+        </div>
+        <div class="col-3"></div>
+    </div>    
 
     <section>
       <div class="row">

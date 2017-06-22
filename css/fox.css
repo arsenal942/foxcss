@@ -201,10 +201,16 @@ ol {
   list-style-type: decimal;
 }
 img {
-  max-width: 96%;
   height: auto;
   display: block;
+  max-width: 70%;
   margin: 0 auto 0 auto;
+}
+.img-small {
+  max-width: 50%;
+}
+.img-large {
+  max-width: 95%;
 }
 .container {
   padding-top: 100px;
@@ -289,3 +295,23 @@ pre > code {
     border: 1px solid #D9D9D9;
     line-height: 150%;
   }
+.panel {
+    border: 1px solid #ddd;
+}
+.panel-heading, .panel-footer, .panel-body {
+padding: 10px;
+}
+.panel-heading, .panel-footer {
+  color:#333;
+  border-top: 0;
+  border-bottom: 0;
+  background-color:#F5F5F5;
+}
+.primary {
+  background: #2776dc;
+  color: #fff;
+}
+.danger {
+  background: #e74c3c;
+  color: #fff;
+}
