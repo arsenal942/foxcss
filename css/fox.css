@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i');
+/*Global*/
 html,
 body {
   height: 100%;
@@ -7,6 +8,7 @@ body {
   color: #333447;
   line-height: 2.25rem;
 }
+/*Typography*/
 h1 {
   font-size: 2.5rem;
 }
@@ -47,9 +49,14 @@ em {
 .justify {
   text-align: justify;
 }
-.full-width {
+.line {
+  height: 1px;
   width: 100%;
+  background: #D6D6D8;
+  margin: 80px 0;
+  text-align: center;
 }
+/*Forms*/
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -113,6 +120,7 @@ label > .label-body {
   margin-left: .35rem;
   font-weight: normal; 
   }
+/*Buttons*/
 .button {
     height: 48px;
     width: 180px;
@@ -176,13 +184,7 @@ label > .label-body {
 .button-outline:hover {
     background: #2776dc;
 }
-.line {
-  height: 1px;
-  width: 100%;
-  background: #D6D6D8;
-  margin: 80px 0;
-  text-align: center;
-}
+/*Lists*/
 ul, ol {
   list-style-position: inside;
 }
@@ -200,6 +202,7 @@ ul {
 ol {
   list-style-type: decimal;
 }
+/*Images*/
 img {
   height: auto;
   display: block;
@@ -212,6 +215,49 @@ img {
 .img-large {
   max-width: 95%;
 }
+/*Code*/
+pre, code {
+    font-size: 95%;
+    border-radius: .25rem; 
+}
+code {
+    line-height: 100%;
+    padding: .1rem .25rem;
+    margin: 0 .1rem;
+    background-color: #FAF8F0;    
+    border: 1px solid #D9D9D9;
+  }
+pre > code {
+    display: block;      
+    background-color: #FAF8F0;    
+    border: 1px solid #D9D9D9;
+    line-height: 150%;
+  }
+/*Panels*/
+.panel {
+    border: 1px solid #ddd;
+}
+.panel-heading, .panel-footer, .panel-body {
+padding: 10px;
+}
+.panel-heading, .panel-footer {
+  color:#333;
+  border-top: 0;
+  border-bottom: 0;
+  background-color:#F5F5F5;
+}
+.primary {
+  background: #2776dc;
+  color: #fff;
+}
+.danger {
+  background: #e74c3c;
+  color: #fff;
+}
+.full-width {
+  width: 100%;
+}
+/*Grid*/
 .container {
   padding-top: 100px;
   width: 90%;
@@ -272,46 +318,9 @@ img {
     width: 96%;
   }
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 65em) {
   .container {
     width: 100%;
-    max-width: 70rem;
+    max-width: 65rem;
   }
-}
-pre, code {
-    font-size: 95%;
-    border-radius: .25rem; 
-}
-code {
-    line-height: 100%;
-    padding: .1rem .25rem;
-    margin: 0 .1rem;
-    background-color: #FAF8F0;    
-    border: 1px solid #D9D9D9;
-  }
-pre > code {
-    display: block;      
-    background-color: #FAF8F0;    
-    border: 1px solid #D9D9D9;
-    line-height: 150%;
-  }
-.panel {
-    border: 1px solid #ddd;
-}
-.panel-heading, .panel-footer, .panel-body {
-padding: 10px;
-}
-.panel-heading, .panel-footer {
-  color:#333;
-  border-top: 0;
-  border-bottom: 0;
-  background-color:#F5F5F5;
-}
-.primary {
-  background: #2776dc;
-  color: #fff;
-}
-.danger {
-  background: #e74c3c;
-  color: #fff;
 }

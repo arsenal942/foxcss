@@ -28,7 +28,7 @@
         <div class="col-12 center">
           <div class="logo center"></div>
           <h1>Fox is the CSS framework for Web Development</h1>
-          <a href="https://bitbucket.org/Nomm_/fox-css">
+          <a href="https://bitbucket.org/Nomm_/fox-css" target="_blank">
             <button class="button button-white">Download</button>
           </a>
         </div>
@@ -93,7 +93,7 @@
       <div class="col-12">
         <h3>The Grid</h3>
         <p>
-          Fox uses a 12-column fluid grid that has a max width of <code>1120px</code>. It shrinks with the browser/device no matter what the size and you can simply change the max width with one line to suit your needs. 
+          Fox uses a 12-column fluid grid that has a max width of <code>1040px</code>. It shrinks with the browser/device no matter what the size and you can simply change the max width with one line to suit your needs. 
           Fox will handle the rest and everything will resize accordingly. Fox uses simple, easy to read syntax that just makes sense. No more nonsense and just plain simple code that makes everything a breeze.
           Container is the main wrapper and Columns should always be a child of a Row.</p>
       </div>
@@ -252,16 +252,14 @@
     <div class="row">
       <div class="col-12">
         <h3>Typography</h3>
-        <p>The type Fox uses is all set with <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Fox has changed the default font-sizes but all measurements are set with <code>rems</code>, so a <code>h1</code> with <code>2.5rem</code> font-size just means <code>40px</code>.</p>
+        <p>
+          Out of the box, Fox uses Open Sans as the default font-family and also comes with a few other things. 
+          <strong>Bold</strong>, <em>Italic</em>, <u>Underline</u> and <strike>Strike</strike> all come standard along with predefined font-sizes for headings.
+          The default font-size is set at 18px with a line-height of 2.25rem. Utilising rem ensures font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property so a h1 with a 2.5rem font-size just means 40px.
+        </p>
       </div>
     <div id="typography" class="row">
       <div class="col-6">
-        <p>
-          <strong>The Typography base</strong> Fox uses is <code>Open Sans</code> which is served by Google. The defaults are set at <code>18px</code> with a <code>2.25rem</code> line height. <strong>Bold</strong>, <em>Italic</em>, <u>Underline</u> and <strike>Strike</strike> all come standard.
-        </p> 
-        <p>
-          <strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.
-        </p>
         <p>
           <strong>Lists</strong>
           <ul>
@@ -344,7 +342,7 @@
             Images are automatically responsive in Fox so you don't ever have to worry about 
             them falling off the edge of rows or not fitting into your columns. 
             By default they are automatically centered and images use a max-width property that is inherited from the parent element. 
-            The default max-width is <code>70%</code> but you can use either <code>.img-small</code> or <code>.img-large</code> to adjust the size as required.
+            The default max-width is <code>70%</code> however you can adjust the size of images using either <code>.img-small</code> or <code>.img-large</code>.
           </p>
           <div class="col-4 center">
             <code>img-small</code>
@@ -375,7 +373,7 @@
         <div class="col-12">
           <h3>Buttons</h3>
           <p>
-            Buttons come in multiple flavours for Fox. All buttons use the base class <code>button</code> however you can modify this base as you please.
+            Buttons come in multiple flavours and all buttons use the base class <code>button</code> which has a few default styles attached to it.
             Button styles can be applied to inputs, buttons and you can wrap an anchor around a button to achieve the same effect. 
             View the <u>source code</u> and check any of the buttons as a quick reference point.
           </p>
@@ -467,7 +465,6 @@
           <h3>Panels</h3>
           <p>
             Panels are a great way to group and organise related information in bordered areas. You can also colour the panels by using contextual classes to define them for the heading, footer or both. 
-            Images have also had some special attention given to them, decreasing their <code>max-width</code> to 50% so they're not too large and nestle nicely into the panel. You can modify this as you require.
           </p>
         </div>
       </div>
@@ -494,7 +491,7 @@
             <div class="panel-footer">Default footer</div>
           </div>
       </div>                       
-      </div>
+      </div>    
     </section>
 
     <div class="row">
@@ -515,13 +512,11 @@
             <pre>
               <code>
               code {
-                  padding: .2rem .5rem;
-                  margin: 0 .2rem;
-                  white-space: nowrap;
-                  background: #F9F9F9;
-                  border: 1px solid #D9D9D9;
-                  border-radius: 4px; 
-                  font-size: 95%;
+                line-height: 100%;
+                padding: .1rem .25rem;
+                margin: 0 .1rem;
+                background-color: #FAF8F0;    
+                border: 1px solid #D9D9D9;
               }
               </code>
             </pre> 
