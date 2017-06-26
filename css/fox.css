@@ -29,13 +29,6 @@ p {
 .font-light {
   font-weight: 200;
 }
-strong {
-    font-weight: 700;
-}
-em {
-    font-weight: 300;
-    font-style: italic;
-}
 .left {
   text-align: left;
 }
@@ -55,6 +48,13 @@ em {
   background: #D6D6D8;
   margin: 80px 0;
   text-align: center;
+}
+blockquote {
+  border-left: 2px solid #D6D6D8;
+  padding: 1.3rem 0 0 1rem;
+  height: 3.75rem;
+  font-family: Courier New, Courier, monospace;
+  font-size: 1.2rem;
 }
 /*Forms*/
 input[type="email"],
@@ -162,14 +162,6 @@ label > .label-body {
 .button-primary:hover {
   background: #679fe6;
 }
-.button-white {
-  background: transparent;
-  border: 1px solid #fff;
-}
-.button-white:hover {
-  background: #fff;
-  color: #2776dc;
-}
 .button-black {
   background: #141619;
 }
@@ -233,6 +225,27 @@ pre > code {
     border: 1px solid #D9D9D9;
     line-height: 150%;
   }
+/*Navigation*/
+nav {
+  border-bottom: 1px solid #2776dc;
+  width: 96%;
+  margin: 0 auto 0 auto;
+}
+nav ul, nav ul li {
+  display: inline;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+nav ul li {
+  margin-right: 2rem;
+}
+nav .brand {
+  color: #2776dc;
+}
+nav ul li:hover, nav .brand:hover {
+  color: #679fe6;
+  transition: all 0.3s ease;
+}
 /*Panels*/
 .panel {
     border: 1px solid #ddd;

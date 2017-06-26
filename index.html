@@ -16,8 +16,8 @@
   <title>Fox | No–nonsense CSS Framework for Web Development</title>
 
   <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/fox.css"/>
   <link rel="stylesheet" href="css/landing.css"/>
-  <link rel="stylesheet" href="css/fox.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
     <!-- Google Analytics -->
     <script>
@@ -106,7 +106,6 @@
         <h3>The Grid</h3>
         <p>
           Fox uses a 12-column fluid grid that has a max width of <code>1040px</code>. It shrinks with the browser/device no matter what the size and you can simply change the max width with one line to suit your needs. 
-          Fox will handle the rest and everything will resize accordingly. Fox uses simple, easy to read syntax that just makes sense. No more nonsense and just plain simple code that makes everything a breeze.
           Container is the main wrapper and Columns should always be a child of a Row.</p>
       </div>
     </div>
@@ -270,7 +269,7 @@
           The default font-size is set at 18px with a line-height of 2.25rem. Utilising rem ensures font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property so a h1 with a 2.5rem font-size just means 40px.
         </p>
       </div>
-    <div id="typography" class="row">
+    <div class="row">
       <div class="col-6">
         <p>
           <strong>Lists</strong>
@@ -284,9 +283,7 @@
               <ul>
                 <li>A nest within a nest</li>
               </ul>
-              <li>Voodoo like behaviour</li>
             </ul>
-            <li>Kappa Kappa Kappa</li>
           </ul>
           <ol>
             <li>Okay just some ordered lists</li>
@@ -296,9 +293,7 @@
               <ol>
                 <li>Into the nest of nests we go</li>
               </ol>
-              <li>And we are now in the main nest</li>
             </ol>
-            <li>This is glorious</li>
           </ol>
         </p>
       </div>
@@ -318,21 +313,11 @@
             <h3>Heading</h3><code>h3 1.375rem</code>
           </div>
       </div>
-            <div class="row">
-          <div class="col-12">
-            <h4>Heading</h4><code>h4 1.125rem</code>
-          </div>
       </div>
-            <div class="row">
-          <div class="col-12">
-            <h5>Heading</h5><code>h5 1rem</code>
-          </div>
-      </div>
-        <div class="row">
-          <div class="col-12">
-            <h6>Heading</h6><code>h6 0.875rem</code>
-          </div>
-        </div>
+      <div class="row">
+        <div class="col-12">
+          <blockquote>blockquote</blockquote>
+        </div>        
       </div>
     </div>
     </div>
@@ -349,12 +334,37 @@
     <section>
       <div class="row">
         <div class="col-12">
+          <h3>Navigation</h3>
+        </div>
+      </div>
+      <nav>
+        <ul class="brand">
+          <li>Brand</li>
+        </ul>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </nav>
+    </section>
+
+    <div class="row">
+      <div class="col-3"></div>
+        <div class="col-6">
+          <div class="line"></div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <section>
+      <div class="row">
+        <div class="col-12">
           <h3>Images</h3>
           <p>
             Images are automatically responsive in Fox so you don't ever have to worry about 
             them falling off the edge of rows or not fitting into your columns. 
-            By default they are automatically centered and images use a max-width property that is inherited from the parent element. 
-            The default max-width is <code>70%</code> however you can adjust the size of images using either <code>.img-small</code> or <code>.img-large</code>.
+            By default they are automatically centered and use a max-width property of <code>70%</code> however you can adjust the size of images using either <code>.img-small</code> or <code>.img-large</code>.
           </p>
           <div class="col-4 center">
             <code>img-small</code>
@@ -387,7 +397,6 @@
           <p>
             Buttons come in multiple flavours and all buttons use the base class <code>button</code> which has a few default styles attached to it.
             Button styles can be applied to inputs, buttons and you can wrap an anchor around a button to achieve the same effect. 
-            View the <u>source code</u> and check any of the buttons as a quick reference point.
           </p>
         </div>
         <div class="col-4 center">
@@ -430,11 +439,7 @@
     <section>
       <div class="row">
         <div class="col-12">
-          <h3>Forms</h3>
-          <p>
-            Just like the rest of Fox, the styling of forms has been kept simple to make customisation a breeze. 
-            All inputs, selects and buttons have been normalised for a common height so that they can be stacked or placed alongside each other without any issues.
-          </p>
+          <h3>Forms</h3>    
         </div>
       </div>
       <div class="row">
@@ -444,8 +449,8 @@
               <input type="text" class="full-width" placeholder="Your name" id="textInput" />
             </div>
             <div class="col-6">
-              <label for="exampleRecipientInput">How did you find out about us?</label>
-              <select class="full-width" id="exampleRecipientInput">
+              <label for="selectInput">How did you find out about us?</label>
+              <select class="full-width" id="selectInput">
                 <option value="Option 1">Google</option>
                 <option value="Option 2">Referral</option>
                 <option value="Option 3">Bitbucket</option>
@@ -457,8 +462,8 @@
       </div>
       <div class="row">
       <div class="col-12">
-        <label for="exampleMessage">Message</label>
-        <textarea class="full-width" placeholder="Enter your message" id="exampleMessage"></textarea>
+        <label for="messageInput">Message</label>
+        <textarea class="full-width" placeholder="Enter your message" id="messageInput"></textarea>
       </div>      
       </div>
     </section>    

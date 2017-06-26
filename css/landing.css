@@ -15,10 +15,6 @@
   font-size: 0.8rem;
 }
 
-#typography [class^="col"] p {
-  margin-top: 10px;
-}
-
 .container {
   padding-top: 100px;
 }
@@ -98,4 +94,13 @@ footer a:visited {
 [class*='ion-']:hover {
   transition: all 0.5s ease;
   cursor: pointer;
+}
+
+.button-white {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.button-white:hover {
+  background: #fff;
+  color: #2776dc;
 }
