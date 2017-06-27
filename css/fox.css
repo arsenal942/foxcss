@@ -208,23 +208,22 @@ img {
   max-width: 95%;
 }
 /*Code*/
-pre, code {
-    font-size: 95%;
-    border-radius: .25rem; 
-}
 code {
-    line-height: 100%;
-    padding: .1rem .25rem;
-    margin: 0 .1rem;
-    background-color: #FAF8F0;    
-    border: 1px solid #D9D9D9;
-  }
+  white-space: nowrap;
+  text-transform: none;
+  padding: 0.2rem 0.5rem;
+  background-color: #FAF8F0;    
+  border: 1px solid #D9D9D9;
+  line-height: 150%;
+  font-size: 90%;
+  border-radius: .25rem; 
+}
+
 pre > code {
-    display: block;      
-    background-color: #FAF8F0;    
-    border: 1px solid #D9D9D9;
-    line-height: 150%;
-  }
+  display: block;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
 /*Navigation*/
 nav {
   border-bottom: 1px solid #2776dc;
