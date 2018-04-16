@@ -9,7 +9,7 @@ Fox is a lightweight, compact and simply all round awesome CSS framework that wa
 ### How do I get set up? ###
 
 * Pull the repoistory
-* Copy **'fox.css'** and **'reset.css'** in the /css/ directory to your desired directory
+* Copy **'fox.css'** and **'reset.css'** in the /dist/ directory to your desired directory
 * Reference them in your head reference
 * Have fun
 
@@ -20,7 +20,7 @@ Fox is a lightweight, compact and simply all round awesome CSS framework that wa
 
 ### Who do I talk to about any issue? ###
 
-* Send me a message and I'll do my best to get back to you: @Nomm_
+* Send me a message via Discord and I'll do my best to get back to you: Nomm#0176
 
 ### Other notes ###
 * It is extremely important you use the **'reset.css'** to ensure an optimal experience. I can't vouch for the accuracy of other CSS reset files as I have only used the one provided.
